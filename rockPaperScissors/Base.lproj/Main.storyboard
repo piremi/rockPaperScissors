@@ -42,22 +42,34 @@
                                         <rect key="frame" x="0.0" y="0.0" width="69.5" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="가위"/>
+                                        <connections>
+                                            <action selector="tabScissors" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4d-L3-lMd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5K-WF-KYm">
                                         <rect key="frame" x="89.5" y="0.0" width="69" height="30"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="바위"/>
+                                        <connections>
+                                            <action selector="tabRock" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQW-vF-tLw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJY-71-sSo">
                                         <rect key="frame" x="178.5" y="0.0" width="69.5" height="30"/>
                                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="보"/>
+                                        <connections>
+                                            <action selector="tabPaper" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1P-Ad-1hX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTW-6b-m5R">
                                 <rect key="frame" x="145" y="360" width="30" height="30"/>
                                 <state key="normal" title="준비"/>
+                                <connections>
+                                    <action selector="tabStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="2M6-JN-ukX"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper.png" translatesAutoresizingMaskIntoConstraints="NO" id="FLw-CY-rPL">
                                 <rect key="frame" x="85" y="40" width="150" height="150"/>
@@ -85,6 +97,7 @@
                     </view>
                     <connections>
                         <outlet property="comImageView" destination="FLw-CY-rPL" id="3LH-j0-eVI"/>
+                        <outlet property="messageLabel" destination="yti-5e-c47" id="XMj-bM-xaj"/>
                         <outlet property="playerImageView" destination="PMC-pf-moV" id="qwf-5W-1Eb"/>
                     </connections>
                 </viewController>
